@@ -9,8 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="image/m-logo.png">
 
-    <title>M-Women</title>
+    <title>MM Women</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,10 +72,10 @@
             }
         }
         @media (max-width:380px){
-            .line::after{
+            .card-title{
                 display: none;
             }
-            .card-title{
+            .line::after{
                 display: none;
             }
         }
@@ -90,9 +91,6 @@
             .dress{
                 width: 95%;
                 margin: auto;
-            }
-            .fa-bookmark{
-                display: none;
             }
         }
 
@@ -171,14 +169,14 @@
     <header>
         <nav>
             <div class="navbar navbar-expand-lg navbar-light bg-light"
-                style="    padding-top: 15px; padding-bottom: 6px;">
+                style="    padding-top: 15px; padding-bottom: 6px; margin-right: 10px;">
                 <div class="container-fluid"
                     style="    padding-right: var(--bs-gutter-x, 1.75rem); padding-left: var(--bs-gutter-x, 1.75rem);">
                     <div class="design">
                         <button type="button" class="btn btn-outline-secondary btn-sm active">COUTURE</button>
                         <button type="button" class="btn btn-outline-secondary btn-sm">DIFFUSE</button>
                     </div>
-                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="m-logo.png" alt="" width="50px"
+                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="image/m-logo.png" alt="" width="50px"
                             height="50px"></a>
                     <div class="head" style=" display: flex;
                     gap: 14px;
@@ -205,22 +203,22 @@
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown">
+                                <a class="nav-link dropdown-toggle active" href="women.html" id="navbarDropdown">
                                     WOMEN
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
+                                <a class="nav-link dropdown-toggle" href="men.html" id="navbarDropdown">
                                     MEN
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
-                                    STARS OF MM
+                                <a class="nav-link dropdown-toggle" href="stars.html" id="navbarDropdown">
+                                    COLLECTIONS
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown">
                                     ABOUT
                                 </a>
                             </li>
@@ -231,15 +229,15 @@
     </header>
     <section>
         <div class="dress p-lg-4">
-        <figure class="text-center my-4">
-            <blockquote class="blockquote line" style="margin-top: 40px;">
+        <figure class="text-center my-4 pt-2">
+            <blockquote class="blockquote line">
                 <h3 style="letter-spacing:3px; line-height: 35px;">WOMENS'S COLLECTIONS</h3>
             </blockquote>
         </figure>
         <div class="container-fluid px-4 p-md-0 d-flex flex-row bd-highlight mb-3 justify-content-between cream"
             style=" letter-spacing: 2px; font-size: 14px;">
             <div class="p-2 bd-highlight d-flex align-items-center" style="gap: 6px;"><a href="#">
-                    <img src="controls.png" alt="" style="width: 20px;"></a>
+                    <img src="image/controls.png" alt="" style="width: 20px;"></a>
                 <p style="margin-bottom: 0;">SHOW FILTERS</p>
             </div>
             <div class="p-2 bd-highlight">
@@ -267,8 +265,8 @@
                         </ul>
                     </li>
                     <li class="d-flex" style="gap: 5px;">
-                        <img src="square1.png" alt="">
-                        <img src="menu.png" alt="">
+                        <img src="image/square1.png" alt="">
+                        <img src="image/menu.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -282,22 +280,22 @@
                             <ol class="list-group list-group-flush mb-0 show">
                               <li class="list-group-item list-group-item-action list-group-item-light"><a href="#gowns">Wedding Gowns</a></li>
                               <li class="list-group-item list-group-item-action list-group-item-light"><a href="#lehenga">Wedding Lehenga</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Engagement Attire</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Reception Dresses</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Mehndi and Sangeet Dresses</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Cocktail Party</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Bridesmaids Collection</a></li>
-                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Fairy Tale Collection</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#bride">Top Bridal Couture</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#reception">Reception Dresses</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#mehndi">Mehndi and Sangeet</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#cocktail">Cocktail Party</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#engagement">Engagement Attire</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#engagement">Fairy Tale Collection</a></li>
                             </ol>
                           </div> 
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="col-6 col-md-4 mb-3" id="gowns">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="gowns">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="white.jpg" class="img-fluid" alt="...">
+                                    <img src="image/white.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -313,10 +311,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga6.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga6.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -332,10 +330,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga9.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga9.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -351,10 +349,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3" id="lehenga">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="lehenga">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga10.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga10.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -370,10 +368,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga8.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga8.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -389,10 +387,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga12.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga15.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -403,15 +401,15 @@
                                 </div>
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                                    <span class="card-text">Pink Handloomed...</span>
+                                    <span class="card-text">Golden Organza Bridal...</span>
                                     <p class="card-text" style="color: rgba(48, 47, 47, 0.795);"> &#x00024;12,245</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="bride">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga13.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga13.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -427,10 +425,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga14.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga14.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -446,10 +444,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga15.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga12.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -460,15 +458,15 @@
                                 </div>
                                 <div class="card-body d-flex flex-column align-items-center">
                                     <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                                    <span class="card-text">Golden Organza Bridal...</span>
+                                    <span class="card-text">Pink Handloomed...</span>
                                     <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;10,745</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="reception">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga1.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga1.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -484,10 +482,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga2.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga2.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -503,10 +501,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga3.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga3.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -522,10 +520,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="engagement">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga4.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga4.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -541,10 +539,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga5.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga5.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -560,10 +558,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga11.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga11.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -579,10 +577,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="cocktail">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga19.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga19.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -598,10 +596,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga17.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga17.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -617,10 +615,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="lehenga18.jpg" class="img-fluid" alt="...">
+                                    <img src="image/lehenga18.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -636,10 +634,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="mehndi">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="kriti.jpg" class="img-fluid" alt="...">
+                                    <img src="image/kriti.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -655,10 +653,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="black.jpg" class="img-fluid" alt="...">
+                                    <img src="image/black.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -674,10 +672,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 mb-3">
+                        <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
                                 <div class="card text-white">
-                                    <img src="ananya.jpg" class="img-fluid" alt="...">
+                                    <img src="image/ananya.jpg" class="img-fluid" alt="...">
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -700,8 +698,8 @@
     </div>
     </section>
     <div class="container-fluid" style="color: white; background-color: black;">
-        <footer class="pt-5 mt-4 container">
-            <div class="row justify-content-around" style="text-transform: uppercase;">
+        <footer class="pt-5 mt-4">
+            <div class="row justify-content-between" style="text-transform: uppercase;">
                 <div class="col-6 col-md-2 mb-3">
                     <h5 class="my-4">THE COMPANY</h5>
                     <ul class="nav flex-column">

@@ -1,10 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Mens</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="image/m-logo.png">
+
+    <title>MM Men</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +27,7 @@
             list-style: none;
             text-decoration: none;
         }
+
         body {
             font-family: "Jost", serif;
         }
@@ -63,6 +71,26 @@
                 display: none;
             }
         }
+        @media (max-width:380px){
+            .card-title{
+                display: none;
+            }
+        }
+        @media (max-width:767px){
+            .doc{
+                display: none;
+            }
+            .cream{
+                display: none !important;
+            }
+        }
+        @media (max-width:992px){
+            .dress{
+                width: 95%;
+                margin: auto;
+            }
+        }
+
         .line {
             position: relative;
         }
@@ -78,20 +106,74 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
+        .card {
+            border: none;
+        }
+
+        .form-control {
+            background-color: #ffffff00;
+            border-radius: 0;
+            border: 1px solid #ced4da78;
+        }
+
+        .col-6 h5 {
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .nav-item a {
+            font-size: 11px;
+            color: rgb(255 255 255 / 63%);
+        }
+
+        .flex-column {
+            gap: 6px;
+        }
+
+        .col-md-11 i {
+            height: 35px;
+            background-color: #262626;
+            width: 35px;
+            border-radius: 40px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        .great {
+            padding: 20px 10px;
+            border-radius: 50px;
+            background-blend-mode: color-burn;
+            -webkit-backdrop-filter: blur(15.4269px);
+            backdrop-filter: blur(15.4269px);
+        }
+        .great i{
+            font-size: 18px;
+        }
+        .show li a{
+            text-decoration: none;
+            color: #262626;
+        }
+        .card-text{
+            text-align: center;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <nav>
             <div class="navbar navbar-expand-lg navbar-light bg-light"
-                style="    padding-top: 15px; padding-bottom: 6px;">
+                style="    padding-top: 15px; padding-bottom: 6px; margin-right: 10px;">
                 <div class="container-fluid"
                     style="    padding-right: var(--bs-gutter-x, 1.75rem); padding-left: var(--bs-gutter-x, 1.75rem);">
                     <div class="design">
                         <button type="button" class="btn btn-outline-secondary btn-sm active">COUTURE</button>
                         <button type="button" class="btn btn-outline-secondary btn-sm">DIFFUSE</button>
                     </div>
-                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="m-logo.png" alt="" width="50px"
+                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="image/m-logo.png" alt="" width="50px"
                             height="50px"></a>
                     <div class="head" style=" display: flex;
                     gap: 14px;
@@ -113,32 +195,27 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown">
                                     HOME
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="women.html" id="navbarDropdown">
                                     WOMEN
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle active" href="men.html" id="navbarDropdown">
                                     MEN
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    STARS OF MM
+                                <a class="nav-link dropdown-toggle" href="stars.html" id="navbarDropdown">
+                                    COLLECTIONS
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown">
                                     ABOUT
                                 </a>
                             </li>
@@ -148,49 +225,570 @@
         </nav>
     </header>
     <section>
-            <figure class="text-center my-4">
-                <blockquote class="blockquote line" style="margin-top: 40px;">
-                    <h3 style="letter-spacing:3px;">MENS'S COLLECTIONS</h3>
-                </blockquote>
-            </figure>
-            <div class="container-fluid px-4 p-md-0 d-flex flex-row bd-highlight mb-3 justify-content-between"
-                style=" letter-spacing: 2px; font-size: 14px;">
-                <div class="p-2 bd-highlight d-flex align-items-center" style="gap: 6px;"><a href="#">
-                        <img src="controls.png" alt="" style="width: 20px;"></a>
-                    <p style="margin-bottom: 0;">SHOW FILTERS</p>
+        <div class="dress p-lg-4">
+        <figure class="text-center my-4 ">
+            <blockquote class="blockquote line">
+                <h3 style="letter-spacing:3px; line-height: 35px;">MENS'S COLLECTIONS</h3>
+            </blockquote>
+        </figure>
+        <div class="container-fluid px-4 p-md-0 d-flex flex-row bd-highlight mb-3 justify-content-between cream"
+            style=" letter-spacing: 2px; font-size: 14px;">
+            <div class="p-2 bd-highlight d-flex align-items-center" style="gap: 6px;"><a href="#">
+                    <img src="image/controls.png" alt="" style="width: 20px;"></a>
+                <p style="margin-bottom: 0;">SHOW FILTERS</p>
+            </div>
+            <div class="p-2 bd-highlight">
+                <ul class="d-flex justify-content-center align-items-center " style="  gap: 25px;">
+                    <li style="color: #3d3d3dd5;">100 LOOKS</li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" style="padding: 0; text-decoration: none;color: black;" href="#"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SORT BY<i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="font-size: 12px;">
+                            <li><a class="dropdown-item" href="#">NEW ARRIVALS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">POPULARITY</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">PRICE - HIGH TO LOW</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">PRICE - LOW TO HIGH</a></li>
+                        </ul>
+                    </li>
+                    <li class="d-flex" style="gap: 5px;">
+                        <img src="image/square1.png" alt="">
+                        <img src="image/menu.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid p-md-0 ">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="position-sticky" style="top: 0;">
+                        <div class="px-2 py-5 doc">
+                            <h4 class="fst-italic list-group-item" style="border: none;">Filters</h4>
+                            <ol class="list-group list-group-flush mb-0 show">
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#groom">Groom Outfit</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#kurta">Kurta Set</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#engagement">Engagement Attire</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#reception">Reception </a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#mehndi">Haldi and Sangeet</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#cocktail">Cocktail Party</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#indian">Indian Outfit</a></li>
+                              <li class="list-group-item list-group-item-action list-group-item-light"><a href="#reception">Western Wear</a></li>
+                            </ol>
+                          </div> 
+                    </div>
                 </div>
-                <div class="p-2 bd-highlight">
-                    <ul class="d-flex justify-content-center align-items-center " style="  gap: 25px;">
-                        <li style="color: #3d3d3dd5;">100 LOOKS</li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" style="padding: 0; text-decoration: none;color: black;" href="#"
-                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SORT BY<i class="fa-solid fa-caret-down" style="color: #000000;"></i>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="font-size: 12px;">
-                                <li><a class="dropdown-item" href="#">NEW ARRIVALS</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">POPULARITY</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">PRICE - HIGH TO LOW</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">PRICE - LOW TO HIGH</a></li>
-                            </ul>
-                        </li>
-                        <li class="d-flex" style="gap: 5px;">
-                            <img src="square1.png" alt="">
-                            <img src="menu.png" alt="">
-                        </li>
-                    </ul>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 mb-3" id="indian">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/siddhart.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Multi-color Embroidered...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,005</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/sunny.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Navy Blue Embroidered...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men3.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black Long Bandhgala...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;4,456</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="engagement">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men6.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black Embroidered Sherwani...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;7,345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men11.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Ebony Velvet Blazer...</span>
+                                    <p class="card-text"style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,895</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/black-kurta.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black Overlapped Bandhgala...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);"> &#x00024;5,245</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="kurta">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men1.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black Mijwan Chikankari...</span>
+                                    <p class="card-text"style="color: rgba(48, 47, 47, 0.795);">&#x00024;4,685</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men4.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Embroidered Short Kurta...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;4,397</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men7.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Blue Open Sherwani...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,745</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="reception">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/blazer1.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Gold Banarasi Brocade...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;11,345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/blazer4.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Grey Chevron Blazer...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,885</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/blazer3.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">All Black Blazer...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,345</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="groom">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men8.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Cream Embroided Kurta...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,347</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men9.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Ivory Bandhgala Set...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,774</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men12.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Cream Kurta with Turban...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;7,736</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="mehndi">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men15.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Yellow Kurta Set...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;4,948</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men19.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Bundi Kurta Set...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,848</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men16.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Yellow Bundi Set...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,840</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3" id="cocktail">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men18.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black Ivory Embroidered...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;7,857</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men17.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Black on Black Ensemble...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,894</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="card text-white">
+                                    <img src="image/men13.jpg" class="img-fluid" alt="...">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                        <div class="great d-flex flex-column align-items-center g-4">
+                                            <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                            <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column align-items-center">
+                                    <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                                    <span class="card-text">Embroided Kurta Set...</span>
+                                    <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,565</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+    <div class="container-fluid" style="color: white; background-color: black;">
+        <footer class="pt-5 mt-4">
+            <div class="row justify-content-between" style="text-transform: uppercase;">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="my-4">THE COMPANY</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ABOUT US</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PRESS</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-body-secondary">SUSTAINABILITY</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">couture
+                                process</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">runways</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ASSOCIATIONS</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CAREER</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="my-4">NEED HELP</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">BOOK AN
+                                APPOINTMENT</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SHIPPING</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ’s</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">STOCKIST</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="my-4">LEGAL</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PRIVACY &
+                                COOKIES</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Fees And
+                                Payment</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Term And
+                                Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5 class="my-4">NEWSLETTER</h5>
+                    <form>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control"
+                                placeholder="Enter your email address" style="font-size: 14px;">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <!-- <div class="col-md-4 offset-md-1 mb-3"> -->
+                    <h5 class="my-4">STORE LOCATOR</h5>
+                    <form>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">location</label>
+                            <input id="newsletter1" type="location" class="form-control"
+                                placeholder="Enter your location" style="font-size: 14px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-11 offset-md-1 mb-3" style="display: flex;justify-content: flex-end;gap: 12px;">
+                <button class="d-flex"
+                    style="background-color: #262626;border: none;color: white;padding: 8px 16px; border-radius: 20px;font-size: 13px;align-items: center; gap: 8px;font-weight: 500;">&#x00024;USD ( USA )</button>
+                <i><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i>
+                <i><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></i>
+                <i><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></i>
+                <i><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i>
+                <i><i class="fa-brands fa-pinterest" style="color: #ffffff;"></i></i>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-center
+             pt-4 mt-4 " style="font-size: 12px;border-top: 1px solid #ffffff82;">
+                <p>&copy; MANISH MALHOTRA. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
 </html>
