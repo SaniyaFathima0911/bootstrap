@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="icon" href="image/m-logo.png">
+    <link rel="icon" href="image/m-logo.png">
 
     <title>Manish Malhotra</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
@@ -28,6 +28,11 @@
 
         body {
             font-family: "Jost", serif;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
         }
 
         .navbar {
@@ -53,18 +58,28 @@
         @media (min-width:300px) and (max-width:990px) {
             .navbar-light .navbar-toggler {
                 position: absolute;
-                top: 30px;
+                top: 15px;
                 right: 0;
+            }
+
+            .navbar-light .navbar-toggler-icon {
+                font-size: 16px;
+            }
+
+            .navbar-brand img {
+                width: 35px;
+                height: 35px;
             }
 
             .design {
                 display: none;
             }
 
-            .head i{
+            .head i {
                 display: none;
             }
-            .head input{
+
+            .head input {
                 display: none;
             }
         }
@@ -116,16 +131,13 @@
 <body>
     <header>
         <nav>
-            <div class="navbar navbar-expand-lg navbar-light bg-light"
-                style="    padding-top: 15px; padding-bottom: 6px; margin-right: 10px;">
-                <div class="container-fluid"
-                    style="    padding-right: var(--bs-gutter-x, 1.75rem); padding-left: var(--bs-gutter-x, 1.75rem);">
+            <div class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-0" style="margin-right: 10px;">
+                <div class="container-fluid px-3">
                     <div class="design">
                         <button type="button" class="btn btn-outline-secondary btn-sm active">COUTURE</button>
                         <button type="button" class="btn btn-outline-secondary btn-sm">DIFFUSE</button>
                     </div>
-                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="image/m-logo.png" alt="" width="50px"
-                            height="50px"></a>
+                    <a class="navbar-brand" href="#" style="margin: 0;"><img src="image/m-logo.png" alt=""></a>
                     <div class="head" style=" display: flex;
                     gap: 14px;
                     align-items: center;">
@@ -144,7 +156,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center pb-2">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="index.html" id="navbarDropdown">
                                     HOME
@@ -199,7 +211,7 @@
         </div>
     </header>
     <section>
-        <figure class="text-center d-flex" style="margin: 55px 0 40px 0;flex-direction: column;gap: 40px;">
+        <figure class="text-center d-flex my-4 flex-column" style="gap: 30px;">
             <blockquote class="blockquote" style="letter-spacing: 4px;margin-bottom: 0;">
                 <h3>CURATED THIS SEASON</h3>
             </blockquote>
@@ -208,8 +220,8 @@
             </figcaption>
         </figure>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 col-md-3 mb-3">
+            <div class="row" style="width: 99%; margin: auto;">
+                <div class="col-6 col-md-3 mb-3 px-2">
                     <div class="card text-white">
                         <img src="image/image1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
@@ -217,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3 px-2">
                     <div class="card text-white" style="height: 100%;">
                         <img src="image/image2.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
                         <div class="card-img-overlay">
@@ -225,7 +237,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3 px-2">
                     <div class="card text-white">
                         <img src="image/image3.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
@@ -233,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3 mb-3">
+                <div class="col-6 col-md-3 mb-3 px-2">
                     <div class="card text-white">
                         <img src="image/image4.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
@@ -250,7 +262,7 @@
     </section>
     <section>
         <div class="container">
-            <figure class="text-center d-flex flex-column" style="margin: 55px 0 30px 0;gap: 40px;">
+            <figure class="text-center d-flex flex-column my-4" style="gap: 40px;">
                 <blockquote class="blockquote" style="letter-spacing: 4px;margin-bottom: 0;">
                     <h3>IN MM</h3>
                 </blockquote>
@@ -373,7 +385,8 @@
             </div>
             <div class="col-md-11 offset-md-1 mb-3" style="display: flex;justify-content: flex-end;gap: 12px;">
                 <button class="d-flex"
-                    style="background-color: #262626;border: none;color: white;padding: 8px 16px; border-radius: 20px;font-size: 13px;align-items: center; gap: 8px;font-weight: 500;">&#x00024;USD ( USA )</button>
+                    style="background-color: #262626;border: none;color: white;padding: 8px 16px; border-radius: 20px;font-size: 13px;align-items: center; gap: 8px;font-weight: 500;">&#x00024;USD
+                    ( USA )</button>
                 <i><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></i>
                 <i><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></i>
                 <i><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></i>
