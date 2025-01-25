@@ -125,6 +125,51 @@
             font-size: 18px;
             line-height: 36px;
         }
+        .contain{
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .contain img {
+      /* width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px; */
+      transition: transform 0.4s ease;
+    }
+
+    .contain:hover img {
+      transform: scale(1.1); 
+    }
+
+    .border-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+      border-radius: 15px;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      animation: rotate-border 2s linear infinite;
+      pointer-events: none;
+    }
+
+    .contain:hover .border-animation {
+      border-color: rgba(252, 235, 252, 0.8);
+      box-shadow: 0 0 20px rgba(252, 235, 252, 0.8);
+    }
+
+    @keyframes rotate-border {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
     </style>
 </head>
 
@@ -222,35 +267,39 @@
         <div class="container-fluid">
             <div class="row" style="width: 99%; margin: auto;">
                 <div class="col-6 col-md-3 mb-3 px-2">
-                    <div class="card text-white">
+                    <div class="card text-white contain">
                         <img src="image/image1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-text" style="letter-spacing: 3px;">LEHENGAS</h5>
                         </div>
+                        <div class="border-animation"></div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mb-3 px-2">
-                    <div class="card text-white" style="height: 100%;">
+                    <div class="card text-white contain" style="height: 100%;">
                         <img src="image/image2.jpg" class="card-img" alt="..." style="height: 100%; object-fit: cover;">
                         <div class="card-img-overlay">
                             <h5 class="card-text" style="letter-spacing: 3px;">FUSION WEAR</h5>
                         </div>
+                        <div class="border-animation"></div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mb-3 px-2">
-                    <div class="card text-white">
+                    <div class="card text-white contain">
                         <img src="image/image3.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-text" style="letter-spacing: 3px;">SHERWANIS</h5>
                         </div>
+                        <div class="border-animation"></div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3 mb-3 px-2">
-                    <div class="card text-white">
+                    <div class="card text-white contain">
                         <img src="image/image4.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-text" style="letter-spacing: 3px;">SAREES</h5>
                         </div>
+                        <div class="border-animation"></div>
                     </div>
                 </div>
             </div>

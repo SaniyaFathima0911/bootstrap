@@ -171,6 +171,52 @@
         .card-text{
             text-align: center;
         }
+        .contain{
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contain img {
+      transition: transform 0.5s ease;
+    }
+
+    .contain:hover img {
+      transform: scale(1.1); 
+    }
+
+    .ripple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .contain:hover .ripple {
+      animation: ripple-effect 1s ease forwards;
+    }
+
+    @keyframes ripple-effect {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.6;
+      }
+      70% {
+        opacity: 0.2;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(15);
+        opacity: 0;
+      }
+    }
+
     </style>
 </head>
 
@@ -300,8 +346,9 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mb-3" id="indian">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/siddhart.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -319,8 +366,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/sunny.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -338,8 +386,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men3.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -357,8 +406,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="engagement">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men6.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -376,8 +426,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men11.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -395,8 +446,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/black-kurta.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -414,8 +466,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="kurta">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men1.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -433,8 +486,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men4.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -452,8 +506,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men7.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -471,8 +526,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="reception">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/blazer1.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -490,8 +546,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/blazer4.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -509,8 +566,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/blazer3.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -528,8 +586,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="groom">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men8.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -547,8 +606,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men9.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -566,8 +626,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men12.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -585,8 +646,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="mehndi">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men15.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -604,8 +666,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men19.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -623,8 +686,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men16.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -642,8 +706,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="cocktail">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men18.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -661,8 +726,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men17.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -680,8 +746,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/men13.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">

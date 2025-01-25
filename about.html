@@ -123,6 +123,24 @@
         .foot a{
             color: rgb(255 255 255 / 63%);
         }
+        .reveal{
+            animation: appear 3s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            overflow: hidden;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                clip-path: inset(100% 100% 0 0);
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+            }
+        }
     </style>
 </head>
 
@@ -189,7 +207,7 @@
         <img src="image/about1.jpg" class="img-fluid" alt="...">
     </section>
     <section>
-        <div class="p-lg-4 container-fluid mt-4">
+        <div class="p-lg-4 container mt-4">
             <div class="row px-4" style="background-color: #f4f4f4;">
                 <div class="col-md-12 mb-3">
                     <figure class="my-3 ">
@@ -200,7 +218,7 @@
                     <p class="card-text">Manish Malhotra's prolific career spanning over 30 years has seen him redefine fashion as a couturier, costume stylist, entrepreneur, and revivalist. Manish began his career as a model, but his passion for movies and fashion soon led him to costume design.</p>
                 </div>
                 <div class="col-md-6">
-                    <img style="border: none;" src="image/about2.jpg" class="img-fluid mt-2" alt="...">
+                    <img style="border: none;" src="image/about2.jpg" class="img-fluid mt-2 reveal" alt="...">
                 </div>
                 <div class="col-md-6" style="overflow: hidden;">
                     <img src="image/about3.jpg" class="img-fluid mt-2" alt="...">

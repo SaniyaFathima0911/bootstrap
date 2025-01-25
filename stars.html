@@ -99,9 +99,7 @@
                 width: 95%;
                 margin: auto;
             }
-            .fa-bookmark{
-                display: none;
-            }
+
         }
 
         .line {
@@ -122,6 +120,7 @@
 
         .card {
             border: none;
+            border-radius: 0;
         }
 
         .form-control {
@@ -174,6 +173,44 @@
         .foot a{
             color: rgb(255 255 255 / 63%);
         }
+        .contain{
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .contain img {
+      transition: transform 0.5s ease;
+    }
+
+    .contain:hover img {
+      transform: scale(1.1);
+    }
+
+    .contain::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 150%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      z-index: 2;
+      transform: skewX(-20deg);
+      transition: none;
+    }
+
+    .contain:hover::after {
+      left: 100%;
+      transition: left 0.8s ease-in-out;
+    }
+        
   </style>
   <body>
     <header>
@@ -237,177 +274,14 @@
     <section>
         <figure class="text-center my-3 pt-3">
             <blockquote class="blockquote line">
-                <h3 style="letter-spacing:3px; line-height: 35px;">COLLECTIONS BY FESTIVE</h3>
+                <h3 style="letter-spacing:3px; line-height: 35px;">COLLECTIONS BY EVENT</h3>
             </blockquote>
         </figure>
         <div class="container-fluid p-md-0 dress p-lg-4">
             <div class="row g-3 mt-1">
                 <div class="col-sm-6 col-lg-3 mb-3">
                     <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive1.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Lavender Embroided Saree...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;11,005</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive2.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Shocking Pink with Embroi...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;12,467</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive5.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Black with Ivory Kurta...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;7,784</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive0.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Greyish Embroided Kurta...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,995</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive7.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Cream With Shimmer...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,474</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive8.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">White With Golden...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,895</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive9.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Maroon Net Embroided...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;11,757</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
-                            <img src="image/festive4.jpg" class="img-fluid" alt="...">
-                            <div
-                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
-                                <div class="great d-flex flex-column align-items-center g-4">
-                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
-                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center">
-                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
-                            <span class="card-text">Crimson Sequin Lehenga...</span>
-                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;12,994</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <figure class="text-center my-3 pt-3">
-            <blockquote class="blockquote line">
-                <h3 style="letter-spacing:3px; line-height: 35px;">COLLECTIONS BY EVENTS</h3>
-            </blockquote>
-        </figure>
-        <div class="container-fluid p-md-0 dress p-lg-4">
-            <div class="row g-3 mt-1">
-                <div class="col-sm-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <div class="card text-white">
+                        <div class="card text-white contain">
                             <img src="image/event1.jpg" class="img-fluid" alt="...">
                             <div
                                 class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
@@ -426,7 +300,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-3">
                     <div class="card">
-                        <div class="card text-white">
+                        <div class="card text-white contain">
                             <img src="image/event2.jpg" class="img-fluid" alt="...">
                             <div
                                 class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
@@ -445,7 +319,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-3">
                     <div class="card">
-                        <div class="card text-white">
+                        <div class="card text-white contain">
                             <img src="image/event3.jpg" class="img-fluid" alt="...">
                             <div
                                 class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
@@ -464,7 +338,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-3">
                     <div class="card">
-                        <div class="card text-white">
+                        <div class="card text-white contain">
                             <img src="image/event4.jpg" class="img-fluid" alt="...">
                             <div
                                 class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
@@ -478,6 +352,169 @@
                             <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
                             <span class="card-text">Golden Shimmer Gown...</span>
                             <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;12,423</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <figure class="text-center my-3 pt-3">
+            <blockquote class="blockquote line">
+                <h3 style="letter-spacing:3px; line-height: 35px;">COLLECTIONS BY FESTIVE</h3>
+            </blockquote>
+        </figure>
+        <div class="container-fluid p-md-0 dress p-lg-4">
+            <div class="row g-3 mt-1">
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive1.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Lavender Embroided Saree...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;11,005</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive2.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Shocking Pink with Embroi...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;12,467</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive5.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Black with Ivory Kurta...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;7,784</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive0.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Greyish Embroided Kurta...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;6,995</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive7.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Cream With Shimmer...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,474</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive8.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">White With Golden...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;5,895</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive9.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Maroon Net Embroided...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;11,757</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card text-white contain">
+                            <img src="image/festive4.jpg" class="img-fluid" alt="...">
+                            <div
+                                class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
+                                <div class="great d-flex flex-column align-items-center g-4">
+                                    <span class="card-text"><i class="fa-regular fa-heart" style="color: #ffffff;"></i></span>
+                                    <p class="card-text"><i class="fa-regular fa-bookmark" style="color: #ffffff;"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h5 class="card-title mb-0" style="color: #b3b3b3;">COUTURE</h5>
+                            <span class="card-text">Crimson Sequin Lehenga...</span>
+                            <p class="card-text" style="color: rgba(48, 47, 47, 0.795);">&#x00024;12,994</p>
                         </div>
                     </div>
                 </div>

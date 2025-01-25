@@ -175,6 +175,52 @@
         .card-text{
             text-align: center;
         }
+        .contain{
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contain img {
+      transition: transform 0.5s ease;
+    }
+
+    .contain:hover img {
+      transform: scale(1.1); 
+    }
+
+    .ripple {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      background: rgba(64, 64, 64, 0.6);
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .contain:hover .ripple {
+      animation: ripple-effect 1s ease forwards;
+    }
+
+    @keyframes ripple-effect {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.6;
+      }
+      70% {
+        opacity: 0.2;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(15);
+        opacity: 0;
+      }
+    }
+
     </style>
 </head>
 
@@ -304,8 +350,9 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mb-3" id="gowns">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/white.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -323,8 +370,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/ivory.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -342,8 +390,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga9.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -361,8 +410,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="lehenga">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga10.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -380,8 +430,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga8.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -399,8 +450,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga15.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -418,8 +470,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="bride">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga13.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -437,8 +490,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga14.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -456,8 +510,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga12.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -475,8 +530,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="reception">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga1.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -494,8 +550,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga2.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -513,8 +570,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga3.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -532,8 +590,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="engagement">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga4.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -551,8 +610,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga5.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -570,8 +630,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga11.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -589,8 +650,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="cocktail">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga19.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -608,8 +670,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga17.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -627,8 +690,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/lehenga18.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -646,8 +710,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3" id="mehndi">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/kriti.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -665,8 +730,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/black.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
@@ -684,8 +750,9 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-3">
                             <div class="card">
-                                <div class="card text-white">
+                                <div class="card text-white contain">
                                     <img src="image/ananya.jpg" class="img-fluid" alt="...">
+                                    <div class="ripple"></div>
                                     <div
                                         class="card-img-overlay d-flex flex-column align-items-end justify-content-end p-3">
                                         <div class="great d-flex flex-column align-items-center g-4">
