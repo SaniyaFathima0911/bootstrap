@@ -125,6 +125,13 @@
 
         .card {
             border: none;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
         }
 
         .form-control {
@@ -230,15 +237,15 @@
             <div class="navbar navbar-expand-lg navbar-light bg-light pt-2 pb-0" style="margin-right: 10px;">
                 <div class="container-fluid px-3">
                     <div class="design">
-                        <button type="button" class="btn btn-outline-secondary btn-sm active">COUTURE</button>
-                        <button type="button" class="btn btn-outline-secondary btn-sm">DIFFUSE</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm active"style="box-shadow: none;">COUTURE</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm disabled">DIFFUSE</button>
                     </div>
                     <a class="navbar-brand" href="#" style="margin: 0;"><img src="image/m-logo.png" alt=""></a>
                     <div class="head" style=" display: flex;
                     gap: 14px;
                     align-items: center;">
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input style="box-shadow: none;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         </form>
                         <i><i class="fa-regular fa-heart" style="color: #000000;"></i></i>
                         <i><i class="fa-regular fa-user" style="color: #000000;"></i></i>
@@ -823,7 +830,7 @@
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="email" class="form-control"
-                                placeholder="Enter your email address" style="font-size: 14px;">
+                                placeholder="Enter your email address"style="font-size: 14px; box-shadow: none; background-color: black;border: 1px solid;color: white;">
                         </div>
                     </form>
                 </div>
@@ -834,7 +841,7 @@
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">location</label>
                             <input id="newsletter1" type="location" class="form-control"
-                                placeholder="Enter your location" style="font-size: 14px;">
+                                placeholder="Enter your location" style="font-size: 14px; box-shadow: none; background-color: black;border: 1px solid;color: white;">
                         </div>
                     </form>
                 </div>
